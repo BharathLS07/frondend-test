@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h2 {text-align: center;}
+        h2.solid {border-bottom: 1px solid #939090;}
+        .container {
+               margin-left: auto;
+               margin-right: auto;
+           }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <form id="createAccountForm">
+            <h2 class="solid">Create Account</h2>
+                <div class="align-left">       
+                  <label for="firstName" style="color: green;" >First name *</label><br>
+                  <input type="text" id="firstName" name="firstName" placeholder="enter your first name" required>
+                </div> 
+          
+                <div class="align-right">    
+                    <label for="lastName" style="color: green;"class="f">Last name *</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="enter your last name" required>
+                </div>
+           
+                <div class="align-left">    
+                  <label for="email"style="color: green;">Email *</label>
+                   <input type="email" id="email" name="email" placeholder="enter your email" required class="size">
+                </div>
+                <br>
+                <div class="align-left">  
+                  <label for="password" style="color: green;">Password *</label>
+                  <input type="password" id="password" name="password" placeholder="enter your password" required>
+                </div>
+
+                <div class="align-right">    
+                    <label for="confirmPassword"style="color: green;">Confirm Password *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="enter your password again" required>
+              </div>
+
+              <div class="align-left">  
+            <div class="inline-group">
+                <label style="color: green;">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+           </div>
+
+
+           <div class="align-right">   
+            <div class="inline-group">
+                <label style="color: green;">Hobbies:</label>
+                <input type="checkbox" id="music" name="hobbies" value="Music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="movies" name="hobbies" value="Movies">
+                <label for="movies">Movies</label>
+            </div>
+            </div>
+
+
+            <label for="sourceOfIncome" style="color: green;">Source of Income</label>
+            <select id="sourceOfIncome" name="sourceOfIncome" required>
+                <option value="Employed">Employed</option>
+                <option value="Self-employed">Self-employed</option>
+                <option value="Unemployed">Unemployed</option>
+                
+            </select>
+            
+
+
+            <label for="income" style="color: green;">Income</label>
+            <div class="range-group">
+                <input type="range" id="income" name="income" min="0" max="100000" value="20000" oninput="updateIncomeValue(this.value)">
+                <span id="incomeValue" style="color: green;">20K</span>
+            </div>
+            
+
+            <div class="align-left">  
+            <label for="profilePicture" style="color: green;">Upload Profile Picture</label>
+            <input type="file" id="profilePicture" name="profilePicture">
+            </div>
+
+            <div class="align-right">  
+            <label for="age" style="color: green;">Age</label>
+            <input type="number" id="age" name="age" value="18" required>
+            </div>
+
+           
+            <label for="bio" style="color: green;">Bio</label>
+            <textarea id="bio" name="bio" placeholder="enter your bio"></textarea>
+            
+
+            <div class="align-right">  
+            <button type="submit" class="btn btn-primary" >Create</button></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: container;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.align-left{ float: left;width:50%; }
+.align-right{ float: right;width:50%; }
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2.solid {
+  border-bottom: 1px solid #939090;
+  padding-bottom: 10px;
+}
+
+
+
+label {
+  color: green;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.range-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.range-group input[type="range"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.inline-group label {
+  margin-right: 10px;
+}
+
+.inline-group input[type="radio"],
+.inline-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005700;
+}
+
+@media (max-width: 768px) {
+  div[style*="float: left"],
+  div[style*="float: right"] {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+  }
+}
+.size{
+  width: 500px;
+}
