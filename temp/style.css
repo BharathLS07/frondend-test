@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:poppins ;
+}
+#intro{
+    height: 100vh;
+    background-image: url(background.jpg);
+    z-index: -1;
+    background-size: cover;
+}
+header{
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+#intro ul{
+    margin-top: -15px;
+    margin-left: 75%;
+}
+#intro li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+main{
+    margin: 100px 250px;
+    color: white;
+}
+main p{
+    text-align: center;
+}
+main h2{
+  text-align: center;
+}
+
+/*======================  page2  starts ======================*/
+
+
+.container{
+  height: 140vh;
+  width: 100%;
+  background-color: rgb(245, 243, 243);
+  position: relative;
+}
+.container nav{
+  height: 50px;
+}
+.container nav img{
+  display: block;
+  height: 30px;
+  width: 100px;
+  fill: #ff5c35;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+.container .info{
+  text-align: center;
+  height: 50vh;
+  background-image: url(contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 300px;
+  backdrop-filter: blur(5px);
+}
+.container .info h1{
+  padding: 20px 200px;
+  color: white;
+  font-size: 2em;
+}
+.container .info p{
+  text-align: center;
+  padding: 0 200px;
+  color: white;
+  line-height: 1.3em;
+}
+.container .grid{
+  position: absolute;
+  top: 400px;
+  left: 180px;
+  display: grid;
+  grid-template-columns: 43% 57%;
+  grid-template-areas: "contact form" "chat form";
+  padding: 20px 50px;
+  gap: 20px;
+  background-color: rgb(245, 243, 243);
+  margin-right: 300px;
+}
+.container .grid .contact{
+  grid-area: contact;
+}
+.container .grid .contact .box{
+  text-align: justify;
+  background-color: white;
+  padding: 50px;
+  border: 1px solid rgb(221, 219, 219);
+}
+.container .grid .contact .box i{
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 15px;
+  border-radius: 50%;
+  float: left;
+  font-size: 1.5em;
+}
+.container .grid .contact .box h1,p{
+  margin-left: 60px;
+}
+.container .grid .contact .box h1{
+  margin: 10px 60px;
+}
+.container .grid .contact .box .p-cont{
+  font-size: 0.8em;
+}
+.container .grid .contact .box h1,.p-cont{
+  color: rgb(48, 146, 212);
+}
+.container .grid .form{
+  grid-area: form;
+}
+.container .grid .form .box{
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+  border: 1px solid rgb(221, 219, 219);
+}
+.container .grid .form .box p{
+  align-items: justify;
+  font-size: 0.85em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: rgb(84, 82, 82);
+}
+.container .grid .form .box .user-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .grid .form .box .user-form label{
+  font-size: 0.7em;
+  color: rgb(84, 82, 82);
+}
+.container .grid .form .box label{
+  font-size: 0.7em;
+  color: rgb(84, 82, 82);
+}
+.container .grid .form .box .user-form input{
+  width: 97%;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  background-color: rgb(238, 236, 234);
+  border: 1px solid rgb(194, 190, 190);
+}
+.container .grid .form .box select{
+  width: 100%;
+  padding: 6px 10px;
+  color: rgb(84, 82, 82);
+  background-color: rgb(238, 236, 234);
+  border: 1px solid rgb(194, 190, 190)
+}
+.container .grid .form .box button{
+  margin-top: 20px;
+  padding: 10px 40px;
+  background-color: rgb(48, 146, 212);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.container .grid .chat{
+  grid-area: chat;
+}
+.container .grid .chat .box{
+  text-align: justify;
+  background-color: white;
+  padding: 50px;
+  border: 1px solid rgb(221, 219, 219);
+}
+.container .grid .chat .box i{
+  color: #110401;
+  border: 2px solid #000000;
+  padding: 15px;
+  border-radius: 50%;
+  float: left;
+  font-size: 1.5em;
+}
+.container .grid .chat .box p{
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+.container .grid .chat .box button{
+  margin-left: 15px;
+  padding: 15px 40px;
+  background-color: rgb(48, 146, 212);
+  color: white;
+  border: none;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+/*======================  page2  ends ======================*/
+
+/*footer*/
+footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 50px;
+ 
+  background-color: black;
+}
+.footer >*{
+  flex: 1 100%;
+}
+.footer-left img{
+  width: 50%;
+
+}
+h2{
+  font-weight: 600;
+  color: white;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 0 ;
+}
+footer a{
+  text-decoration: none;
+}
+.footer-right{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-right >*{
+  flex: 1 100%;
+}
+.footer-bottom{
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+
+}
+.footer-left p
+{
+padding-right: 20%;
+color:#999
+}
+.social a{
+background: #364a62;
+width: 40px;
+height: 40px;
+display: inline-block;
+margin-right: 10px;
+}
+.social a i{
+  color: #ffffff;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+@media screen and (min-width:60px) {
+  .footer-right >*{
+      flex: 1;
+  }
+  .footer-left{
+      flex: 1 0px;
+  }
+  .footer-right{
+      flex: 2 0px;
+  }
+}
+@media(max-width:60px){
+  .footer{
+      padding: 15px;
+  }
+}
