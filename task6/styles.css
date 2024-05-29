@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:poppins ;
+}
+#intro{
+    height: 100vh;
+    background-image: url(background.jpg);
+    z-index: -1;
+    background-size: cover;
+}
+header{
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+#intro ul{
+    margin-top: -15px;
+    margin-left: 75%;
+}
+#intro li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+main{
+    margin: 100px 250px;
+    color: white;
+}
+main p{
+    text-align: center;
+}
+main h2{
+  text-align: center;
+}
+
+/*======================  page2  starts ======================*/
+
+
+.contact-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background: url(contact.jpg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    width: 45%;
+}
+
+.contact-call, .contact-chat {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-call .icon, .contact-chat .icon {
+    font-size: 40px;
+    color: #ff7a59;
+    margin-bottom: 10px;
+}
+
+.contact-call .details p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-call .details .phone-number {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.contact-call .details .see-numbers {
+    display: block;
+    margin-top: 5px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.chat-button {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group input, .contact-form .form-group select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+/*======================  page2  ends ======================*/
+
+/*footer*/
+footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 50px;
+ 
+  background-color: black;
+}
+.footer >*{
+  flex: 1 100%;
+}
+.footer-left img{
+  width: 50%;
+
+}
+h2{
+  font-weight: 600;
+  color: white;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 0 ;
+}
+footer a{
+  text-decoration: none;
+}
+.footer-right{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-right >*{
+  flex: 1 100%;
+}
+.footer-bottom{
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+
+}
+.footer-left p
+{
+padding-right: 20%;
+color:#999
+}
+.social a{
+background: #364a62;
+width: 40px;
+height: 40px;
+display: inline-block;
+margin-right: 10px;
+}
+.social a i{
+  color: #ffffff;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+@media screen and (min-width:60px) {
+  .footer-right >*{
+      flex: 1;
+  }
+  .footer-left{
+      flex: 1 0px;
+  }
+  .footer-right{
+      flex: 2 0px;
+  }
+}
+@media(max-width:60px){
+  .footer{
+      padding: 15px;
+  }
+}
